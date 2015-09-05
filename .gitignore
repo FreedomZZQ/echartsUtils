@@ -1,0 +1,5 @@
+# echatsutils ignore
+#ThinkPHP/
+#index.php
+#.gitignore
+mzz_template
