@@ -1,0 +1,175 @@
+@media only screen and (max-width: 767px) {
+#mian_body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    	background-image: url(/echartsUtils/Public/Img/mian_background.png);
+	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-color: #006699;
+  }
+}
+
+body{
+	background-color:#006699;
+}
+header{
+	background-image: url(/echartsUtils/Public/Img/header_background.png);
+	padding-right: 8%;
+}
+span{
+	margin-left: 10px;
+	color:#ffffff;
+}
+header div div img{
+	margin-top: -8px;
+	height:80%;
+	width:80%;
+}
+nav{
+	padding-top:3px;
+}
+hr{
+	margin-top: 10px;
+	border:1px solid #ffffff;
+	width:0px;
+	height:18px;
+}
+nav ul #reigster a span{
+	margin-left: 0px;
+}
+nav ul #reigster a{
+	padding:10px 0px;
+}
+nav ul #login a span{
+	margin-left: 0px;
+}
+nav ul #login a{
+	float: left;
+	text-align: left;
+	margin-left: 0px;
+}
+nav ul .hidden-xs{
+	
+}
+.navbar-toggle .icon-bar {background:#ffffff;}
+#login_content{
+	margin-top: 10%;
+}
+#register_content{
+	margin-top: 15%;
+}
+#main_content{
+	margin-top:10%;
+}
+.img_div img{
+	float: center;
+}
+.login_message{
+	margin-top: 30px;
+}
+.form-group{
+	display: inline;
+}
+.form-control{
+	border: 3px solid #ffffff;
+	background-color:hsla(0,0%,16%,0);
+	border-radius: 20px;
+	
+}
+.button_vcode{
+	text-align:center;
+}
+.button_vcode input{
+	display: inline;
+	background-color: hsla(0,0%,16%,0);
+	border-style: solid;
+	border-color: #ffffff;
+	border-radius: 20px;
+	color:#ffffff;
+}
+.button_vcode img{
+	display: inline;
+	height:20px;
+	width:auto;
+}
+.btn_echarts {
+	margin-top: 8%;
+	margin-bottom: 10%;
+}
+.btn_echarts img{
+	margin: 0px;
+}
+.btn{
+	border-radius: 5px;
+	background-color: hsla(0,0%,16%,0);
+
+}
+.line,.pie,.histogram,.scatter{
+	margin-top: 10px;
+	font-family: Gadugi;
+	font-style: Regular;
+	font-size:50px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#echarts_line{
+	margin-top: 8%;
+}
+td input{
+	background-color: hsla(0,0%,16%,0);
+	border-color: hsla(0,0%,16%,0);
+}
+
+#mian_body{
+	background-image: url(/echartsUtils/Public/Img/mian_background.png);
+	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-color: #006699;
+ 	overflow-x:hidden;
+}
+
+.main_right .row .row .font_version{
+	margin-top: 1%;
+	font-size: 25px;
+	color: #ffffff;
+	text-align: right;
+	
+}
+.main_left .row .row .font_version{
+	margin-top: 1%;
+	font-size: 25px;
+	color: #ffffff;
+	text-align: left;
+}
+.main_right .row img{
+	margin-top: 16%;
+	margin-bottom: 5%;
+}
+.main_left .row img{
+	margin-top: 18%;
+	margin-bottom: 5%;
+}
+.main_left .row button{
+	margin-top: 8%;
+}
+
+
+#echarts_pie{
+	margin-top: 10%;
+	color: #ffffff;
+	font-size: 18px;
+}
+#echarts_pie button{
+	color: #000000;
+}
+#echarts_pie table thead tr .pie_title{
+	text-align: center;
+}
+#echarts_pie table thead tr .pie_title input{
+	text-align: center;
+}

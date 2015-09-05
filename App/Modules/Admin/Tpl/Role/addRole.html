@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>增加角色</title>
+	<meta http-equiv="Content-Type:" content="text/html;charset=utf-8">
+</head>
+<body>
+<form action="{:U(GROUP_NAME . '/Role/addRoleHandle')}" method="POST">
+	角色等级<input name="level" type="text"/><br/>
+	拥有功能
+	<foreach name="functionList" item="item">
+		<input type="checkbox" name="function[]" id="function[]" value="{$item.id}" />{$item.function}
+	</foreach>
+	<br/>
+	<input type="submit" value="确定"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改等级</title>
+	<meta http-equiv="Content-Type:" content="text/html;charset=utf-8">
+</head>
+<body>
+<form action="{:U(GROUP_NAME . '/User/updateUserHandle')}" method="POST">
+	等级
+	<foreach name="role" item="item">
+		<input name='rid' type="radio" value="{$item.id}">{$item.level}
+	</foreach>
+	<input name="uid" type="hidden" value="{$uid}">
+	<input type="submit" value="确定">
+</form>
+</body>
+</html>

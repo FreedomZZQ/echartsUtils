@@ -1,0 +1,54 @@
+window.my_Charts={};
+window.my_Charts.Echarts_Init=function(doc_element,E_name,E_type,Ex_array,Ey_array){
+	require.config({
+		paths:{
+			echarts:'echarts-2.2.2/build/dist'
+		}
+	});
+	require(
+		[
+		'echarts',
+		'echarts/chart/bar',
+		'echarts/chart/line'
+		],
+		function(ec){
+		var myChart=ec.init(doc_element);
+		myChart.showLoading({
+			text:'正在努力读取数据中',
+		});
+		myChart.hideLoading();
+		var option={
+			legend:{
+				padding:5,
+				itemGap:10,
+				data:[]
+			},
+			tooltip:{
+				trigger:'item',
+			},
+			xAxis:[
+			{
+				type:'category',
+				data:Ex_array
+					//data:['jan','fab','mar','apr','may','jun','jul','aug','oct','nov','dec']
+			}],
+			yAxis:[
+			{
+				type:'value',
+				boundaryGap:[0.1,0.1],
+				splitNumber:4
+			}],
+			series:[],
+		};
+		myChart.setOption(option);
+		option.legend.data.push(E_name);
+		option.series.push({
+			name:E_name,
+			type:E_type,
+			data:Ey_array
+				//data:[112,23,45,56,233,343,454,89,343,123,45,11]
+		});
+			//option.series.data.add(11);
+		myChart.setOption(option);
+	});
+};
