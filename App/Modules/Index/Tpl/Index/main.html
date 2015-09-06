@@ -14,7 +14,7 @@
 				<div class="main_left col-sm-6">
 					<div class="row">
 						<div class="col-sm-3"></div>
-						<img class="img-responsive col-sm-9" src="Public/Img/logo.png">
+						<img class="img-responsive col-sm-9" src="__PUBLIC__/Img/logo.png">
 						<div class="row">
 							<div class="col-sm-6"></div>
 							<div class="font_version col-sm-6">
@@ -24,14 +24,14 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-6"></div>
-						<button type="submit" class="btn col-sm-2"><img class="img-responsive" src="Public/Img/sign_up2.png"></button>
+						<button id="main_sign" type="submit" class="btn col-sm-2"><img class="img-responsive" src="__PUBLIC__/Img/sign_up2.png"></button>
 						<div class="col-sm-4"></div>
 					</div>
 				</div>
 				<div class="main_right col-sm-6">
 					<div class="row">
 						<div class="col-sm-3"></div>
-						<img class="img-responsive col-sm-6" src="Public/Img/main_more.png">
+						<img class="img-responsive col-sm-6" src="__PUBLIC__/Img/main_more.png">
 						<div class="col-sm-3"></div>
 						<div class="row">
 							
@@ -60,9 +60,6 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-
-		window.onload=function(){
-			
-		}
+	
 	</script>
 </html>

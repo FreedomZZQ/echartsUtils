@@ -14,7 +14,7 @@ function data_jsoning(item1,item2){
 function echarts_line(line_name,x_positions,y_positions){
 	require.config({
 		paths:{
-			echarts:'../echarts-2.2.2/build/dist'
+			echarts:'../echarts/build/dist'
 		}
 	});
 	require(
@@ -72,7 +72,7 @@ function echarts_line(line_name,x_positions,y_positions){
 function echarts_pie(pie_title,pie_name,pie_value){
 	require.config({
 				paths:{
-					echarts:'../echarts-2.2.2/build/dist'
+					'echarts':'__PUBLIC__/Js/echarts/build/dist'
 				}
 			});
 	require(

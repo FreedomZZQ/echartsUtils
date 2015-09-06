@@ -13,7 +13,7 @@
 			<div class="row">
 				<div class="col-xs-1 col-sm-4 col-md-4"></div>
 				<div class="col-xs-11 col-sm-4 col-md-4">
-					<img class="img-responsive" src="Public/Img/logo.png" alt="logo">
+					<img class="img-responsive" src="__PUBLIC__/Img/logo.png" alt="logo">
 				</div>
 				<div class=" col-sm-4 col-md-4"></div>
 			</div>
@@ -21,14 +21,14 @@
 				<div class=" col-sm-4 col-md-4"></div>
 				<form action="<?php echo U(GROUP_NAME . '/User/loginHandle');?>" method="POST" class="form-horizontal col-sm-4 col-md-4" role="form">
 				   <div class="form-group ">
-				      <label for="firstname" class="col-sm-2 col-md-2 control-label"><img src="Public/Img/login_name.png"></label>
+				      <label for="firstname" class="col-sm-2 col-md-2 control-label"><img src="__PUBLIC__/Img/login_name.png"></label>
 				      <div class="col-md-10 col-sm-10">
 				         <input name="username" type="text" class="form-control" id="firstname" 
 				             placeholder="请输入用户名">
 				      </div>			
 				   </div>
 				   <div class="form-group">
-				      <label for="lastname" class="col-sm-2 col-md-2  control-label"><img src="Public/Img/login_password.png"></label>
+				      <label for="lastname" class="col-sm-2 col-md-2  control-label"><img src="__PUBLIC__/Img/login_password.png"></label>
 				      <div class="col-md-10 col-sm-10">
 				         <input name="password" type="text" class="form-control" id="lastname" 
 				             placeholder="请输入密码">
@@ -46,7 +46,7 @@
 				   		<label for="bt_login" class="col-xs-1 col-sm-2 col-md-2 control-label"></label>
 				      	<div class="col-xs-11 col-md-10 col-sm-10 bt_submit" id="bt_login">
 				      		<div class="col-xs-3 col-sm-2 col-md-3"></div>
-				    		<button type="submit" class="btn col-sm-8 col-xs-6 col-md-6"><img class="img-responsive" src="Public/Img/login.png"></button>
+				    		<button type="submit" class="btn col-sm-8 col-xs-6 col-md-6"><img class="img-responsive" src="__PUBLIC__/Img/login.png"></button>
 				    		<div class="col-xs-3 col-sm-2 col-md-3"></div>
 				      	</div>
 				   </div>
@@ -54,7 +54,7 @@
 				   		<label for="bt_sign" class="col-xs-1 col-sm-2 col-md-2 control-label"></label>
 				      	<div class="bt_submit col-xs-11 col-sm-10 col-md-10" id="bt_sign">
 				      		<div class="col-xs-3 col-sm-2 col-md-3"></div>
-				         	<button type="submit" class="btn col-sm-8 col-xs-6 col-md-6"><img class="img-responsive" src="Public/Img/sign_up.png"></button>
+				         	<button type="submit" class="btn col-sm-8 col-xs-6 col-md-6"><img class="img-responsive" src="__PUBLIC__/Img/sign_up.png"></button>
 				         	<div class="col-xs-3 col-sm-2 col-md-3"></div>
 				      	</div>
 				   </div>

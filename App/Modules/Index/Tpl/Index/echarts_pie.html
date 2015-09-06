@@ -1,14 +1,14 @@
-﻿<!doctype>
+﻿<!doctype html>
 <html>
 	<head>
 		<meta charest="utf-8">
 		<title>echarts_pie</title>
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script src="bootstrap.min.js"></script>
-		<script src="../echarts-2.2.2/build/dist/echarts.js"></script>
-		<script src="myecharts.js"></script>
-		<link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="srp.css">
+		<script type="text/javascript" src="__PUBLIC__/Js/jquery.min.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/bootstrap.min.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/echarts/build/dist/echarts.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/myecharts.js"></script>
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/srp.css">
 	</head>
 	<body>
 		<div class="container" id="echarts_pie">
@@ -73,7 +73,7 @@
 				pie_value.push($(this).val());
 			});
 			echarts_pie(pie_title,pie_name,pie_value);
-		})
+		});
 		</script>
 	</body>
 </html>

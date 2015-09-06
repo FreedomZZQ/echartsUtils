@@ -1,0 +1,79 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!doctype html>
+<html>
+	<head>
+		<meta charest="utf-8">
+		<title>echarts_pie</title>
+		<script type="text/javascript" src="__PUBLIC__/Js/jquery.min.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/bootstrap.min.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/echarts/build/dist/echarts.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/myecharts.js"></script>
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/srp.css">
+	</head>
+	<body>
+		<div class="container" id="echarts_pie">
+			<div class="row">
+				<div class="col-sm-4">
+					<table class="table table-bordered">
+						<thead>
+							<tr >
+								<td colspan="2" class="pie_title"><input type="text" value="table-name"></td>
+							</tr>
+							<tr>
+								<td><input type="text" value="name"></td>
+								<td><input type="text" value="value"></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" value="直接访问"></td>
+								<td><input type="text" value="224"></td>
+							</tr>
+							<tr>
+								<td><input type="text" value="邮件营销"></td>
+								<td><input type="text" value="347"></td>
+							</tr>
+							<tr>
+								<td><input type="text" value="联盟广告"></td>
+								<td><input type="text" value="421"></td>
+							</tr>
+							<tr>
+								<td><input type="text" value="视频广告"></td>
+								<td><input type="text" value="123"></td>
+							</tr>
+							<tr>
+								<td><input type="text" value="搜索引擎"></td>
+								<td><input type="text" value="1523"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-sm-8">
+					<div class="pie_main" id="pie_main" style="height:400px">
+					</div>
+				</div>
+			</div>
+			<button type="submit" value="add_data" class="pie_bt1">add_data</button>
+			<button type="submit" value="add_data" class="pie_bt2">提交数据</button>
+		</div>
+		<script type="text/javascript">
+		$('.pie_bt1').click(function(){
+			var add_pie="<tr><td><input type="+"text"+" value="+""+"></td><td><input type="+"text"+" value="+""+"></td></tr>";
+			$('#echarts_pie tbody tr:last').after(add_pie);
+		});
+		$('.pie_bt2').click(function(){
+			var pie_title,
+				pie_name=new Array(),
+				pie_value=new Array();
+			pie_title=$('.pie_title input').value;
+			$("#echarts_pie table tbody tr td:first-child input").each(function(){
+				pie_name.push($(this).val());
+			});
+			$("#echarts_pie table tbody tr td:last-child input").each(function(){
+				pie_value.push($(this).val());
+			});
+			echarts_pie(pie_title,pie_name,pie_value);
+		});
+		</script>
+	</body>
+</html>

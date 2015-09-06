@@ -173,3 +173,9 @@ td input{
 #echarts_pie table thead tr .pie_title input{
 	text-align: center;
 }
+.post-thumb{
+	opacity: 0.8;
+}
+.img_change{
+	opacity: 1;
+}

@@ -55,6 +55,7 @@ Class UserAction extends Action{
 			'level' => $user['level'],
 			));
 		$this->success('登录成功',U(GROUP_NAME . '/Index/index'));
+		
 
 	}
 	//验证码

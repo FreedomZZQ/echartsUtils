@@ -10,6 +10,7 @@ Class LoginAction extends Action{
 				$this->error('用户名或密码不正确');
 			}
 			session('admin',$username);
-			$this->success('登陆成功',U(GROUP_NAME . '/Index/index'));
+			// $this->success('登陆成功',U(GROUP_NAME . '/Index/index'));
+			$this->success('登陆成功',U(GROUP_NAME));
 	}
 }
