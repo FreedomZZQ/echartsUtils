@@ -3,16 +3,17 @@
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
     	background-image: url(/echartsUtils/Public/Img/mian_background.png);
-	background-position: center center;
- 	background-repeat: no-repeat;
- 	background-attachment: fixed;
- 	background-size: cover;
- 	background-color: #006699;
+		background-position: center center;
+ 		background-repeat: no-repeat;
+ 		background-attachment: fixed;
+ 		background-size: cover;
+ 		background-color: #006699;
   }
 }
 
 body{
 	background-color:#006699;
+	overflow-x:hidden;
 }
 header{
 	background-image: url(/echartsUtils/Public/Img/header_background.png);
@@ -61,7 +62,7 @@ nav ul .hidden-xs{
 	margin-top: 15%;
 }
 #main_content{
-	margin-top:10%;
+	margin-top:4%;
 }
 .img_div img{
 	float: center;
@@ -123,17 +124,17 @@ td input{
 	border-color: hsla(0,0%,16%,0);
 }
 
-#mian_body{
-	background-image: url(/echartsUtils/Public/Img/mian_background.png);
+/*#main_body1{
+	background-image: url(/echartsUtils/Public/Img/main_background.png);
 	background-position: center center;
  	background-repeat: no-repeat;
- 	background-attachment: fixed;
+ 	/*background-attachment: fixed;
  	background-size: cover;
- 	background-color: #006699;
+ 	
  	overflow-x:hidden;
-}
+}*/
 
-.main_right .row .row .font_version{
+/*.main_right .row .row .font_version{
 	margin-top: 1%;
 	font-size: 25px;
 	color: #ffffff;
@@ -147,17 +148,17 @@ td input{
 	text-align: left;
 }
 .main_right .row img{
-	margin-top: 16%;
-	margin-bottom: 5%;
+	margin-top: 14%;
+
 }
 .main_left .row img{
 	margin-top: 18%;
-	margin-bottom: 5%;
+	
 }
 .main_left .row button{
 	margin-top: 8%;
 }
-
+*/
 
 #echarts_pie{
 	margin-top: 10%;
@@ -178,4 +179,103 @@ td input{
 }
 .img_change{
 	opacity: 1;
+}
+
+
+.mtitle{
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 10%;
+	opacity: 0.8;
+}
+#main_body1 div{
+	position: relative;
+}
+#main_body1 div .main_mid1{
+	position:absolute;
+	z-index:2;
+	top:25%;
+}
+#main_body1 div .main_mid1 div #computer_pen{
+	position: relative;
+}
+#main_body1 div .main_mid1 div #computer_pen #pen_img{
+	position: absolute;
+	z-index:2;
+	top:1px;
+}
+#main_body1 div .main_mid1 #main_logo img{
+	margin-top: 18%;
+}
+#main_body1 div .main_mid1 #mobchart{
+	color: #f0f0f0;
+	font-weight: 300;
+	font-size: 1em;
+	margin-top: 20%;
+	opacity: 0.8;
+}
+#main_body2 div{
+	position: relative;
+}
+#main_body2 div .main_mid2{
+	position:absolute;
+	z-index:2;
+	top:25%;
+	/*text-align: center;*/
+}
+#main_body2 div .main_mid2 .main_echarts{
+	position:relative;
+	float: right;
+}
+#main_body2 div .main_mid2 .main_echarts div{
+	margin-bottom:2%;
+}
+#main_body4 div{
+	position: relative;
+}
+#main_body4 div .main_mid4{
+	position:absolute;
+	z-index:2;
+	top:30%;
+	/*text-align: center;*/
+}
+#main_body4 div .main_mid4 .main_echarts{
+	position:relative;
+}
+#main_body4 div .main_mid4 .main_echarts #main_echarts1{
+	position: absolute;
+	margin-top: -10%;
+	margin-left: 7%;
+}
+
+#main_body5 div{
+	position: relative;
+}
+#main_body5 div .main_mid5{
+	position:absolute;
+	z-index:2;
+	top:45%;
+}
+#main_body5 div .main_mid5 div p{
+	margin-top: 4%;
+	font-size: 1em;
+	text-align: center;
+	font-weight: 200;
+	opacity: 0.8;
+}
+#main_foot div{
+	text-align: center;
+	color: #f0f0f0;
+
+}
+#main_foot div .mtitle{
+	margin-top: 4%;
+	font-size: 1em;
+	font-weight: 300;
+	padding-bottom: 2%;
+	opacity: 0.8;
+}
+#main_foot div .mfoot{
+	margin-top: 3%;
+	font-size: 1em;
 }

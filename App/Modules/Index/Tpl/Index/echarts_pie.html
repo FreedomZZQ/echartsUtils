@@ -5,8 +5,8 @@
 		<title>echarts_pie</title>
 		<script type="text/javascript" src="__PUBLIC__/Js/jquery.min.js"></script>
 		<script type="text/javascript"  src="__PUBLIC__/Js/bootstrap.min.js"></script>
-		<script type="text/javascript"  src="__PUBLIC__/Js/echarts/build/dist/echarts.js"></script>
-		<script type="text/javascript"  src="__PUBLIC__/Js/myecharts.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/echarts-all.js"></script>
+		
 		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/srp.css">
 	</head>
@@ -48,7 +48,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-8" >
 					<div class="pie_main" id="pie_main" style="height:400px">
 					</div>
 				</div>
@@ -75,5 +75,6 @@
 			echarts_pie(pie_title,pie_name,pie_value);
 		});
 		</script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/myecharts.js"></script>
 	</body>
 </html>

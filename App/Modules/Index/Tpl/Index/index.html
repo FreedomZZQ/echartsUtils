@@ -44,7 +44,7 @@
             		switch(item_element){
 	          		case "main_page":{
 	            			$('#content').load("{:U(GROUP_NAME . '/Index/main')} #main_content",function(){
-	               			$("body").attr("id","mian_body");
+	               			// $("body").attr("id","mian_body");
 	               			$('#main_sign').bind('click',function(){
 	               				$('.active').removeClass('active');
 	               				$("#register").addClass('active');
@@ -58,7 +58,7 @@
 	        		  }
 	         		 case "chart":{
 	           			 $('#content').load("{:U(GROUP_NAME . '/Index/web_echarts')} #main_content",function(){
-	            				  $("body").removeAttr("id");
+	            				  // $("body").removeAttr("id");
 	            				  $('[class=post-thumb]').bind('click',function(){
       						$('.img_change').removeClass("img_change");
       						$(this).addClass("img_change");
@@ -69,7 +69,7 @@
       								break;
       							}
       							case 'line':{
-      								$(".bt_submit a").attr("href","{:U(GROUP_NAME . '/Index/echarts_pie')}");
+      								$(".bt_submit a").attr("href","{:U(GROUP_NAME . '/Index/echarts_line')}");
       								break;
       							}
       							
@@ -92,13 +92,13 @@
 	       	 	}
 	          		case "register":{
 	          			$('#content').load("{:U(GROUP_NAME . '/Index/register')} #login_content",function(){
-	              			$("body").removeAttr("id");
+	              			// $("body").removeAttr("id");
 	           			 });
 	           			 break;
 	          		}
 	          		case "login":{
 	           			 $('#content').load("{:U(GROUP_NAME . '/Index/login')} #login_content",function(){
-	              			$("body").removeAttr("id");
+	              			// $("body").removeAttr("id");
 	            			});
 	           			 break;
 	          		}

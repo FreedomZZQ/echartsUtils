@@ -3,15 +3,20 @@
 	<head>
 		<meta charest="utf-8">
 		<title>echarts_line</title>
+
 		<script type="text/javascript" src="__PUBLIC__/Js/jquery.min.js"></script>
 		<script type="text/javascript"  src="__PUBLIC__/Js/bootstrap.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="__PUBLIC__/Css/srp.css">
-		<script type="text/javascript"  src="__PUBLIC__/Js/echarts/doc/asset/js/esl/esl.js"></script>
+		<script type="text/javascript"  src="__PUBLIC__/Js/echarts-all.js"></script>
 		<script type="text/javascript"  src="__PUBLIC__/Js/myecharts.js"></script>
+
 	</head>
 	<body>
 		<div class="container" id="echarts_line">
+			<input type="submit" class="line_name" value="增加图像">
+			<input type="submit" class="data_xy" value="增加(x,y)">
+			<input type="submit" class="submit_btn" value="生成图像">
 			<div class="row">
 				<div class="col-sm-12">
 					<table class="table table-bordered">
@@ -57,10 +62,7 @@
 					</table>
 				</div>
 			</div>
-			<div id="main" style="height:400px"></div>
-			<input type="submit" class="line_name" value="增加图像">
-			<input type="submit" class="data_xy" value="增加(x,y)">
-			<input type="submit" class="submit_btn" value="生成图像">
+			<div class="line_main" id="line_main" style="height:400px"></div>
 		</div>
 		<script type="text/javascript">
 			$(".line_name").click(function(){
